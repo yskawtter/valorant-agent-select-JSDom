@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* ajeitar o body */
+body {
+    background-image: url('./Agents/bgval.jpg');
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center center;
+    
+}
+.agente-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.agente-container {
+    display: block;
+}
+.img-agent {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    transition: .2s;
+}
+
+.agente-icon {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+    color: whitesmoke;
+}
+.img-agent:hover {
+    background-color: rgba(255, 255, 255, 0.473);
+}
+.agente-icon img, p {
+    display: inline-block;
+}
+.agente-img-bruta {
+    max-width: 100%;
+}
+.agente-lista-select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    gap: 4px;
+}
+.agnt-img-principal {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.agentes-skill-exp {
+    display: flex;
+}
+.agente-skillspec p {
+    color: whitesmoke;
+    font-weight: 400;
+}
+.agente-skillspec span {
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.agente-skillspec h4 {
+    font-size: 100px;
+    color: #faeaa2;
+}
+
+.agt-skill {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 15px;
+    gap: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.agt-skill li h3 {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+    text-transform: uppercase;
+}
+.agt-skill p {
+    padding-top: 30px;
+    color: #fcdb48;
+    font-weight: bold;
+}
+.agt-skill li img {
+    background-color: rgba(255, 255, 255, 0.226);
+    display: flex;
+    cursor: pointer;
+}
+.agt-skill li {
+    list-style: none;
+}
+.agt-skill li img {
+    width: 5vw;
+    padding: 6px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.agt-skill-container {
+    display: flex;
+}
+.agt-type {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: rgba(255, 255, 255, 0.863);
+    padding: 10px;
+}
+
+/*STLE*/
+
+.mapa, .comp {
+    color: whitesmoke;
+    padding-left: 24px;
+}
+#timer {
+    color: rgba(245, 245, 245, 0.664);
+    font-weight: bold;
+    font-size: 80px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+/* BLOQUEAR JS */
+.bloq {
+    display: none;
+}
+.ativo {
+    display: block;
+}
+/*style js*/
+
+.js-agt-principal img, .js-accordion, .agt-type {
+    animation: show .5s forwards;
+}
+.agente-skillspec h4 {
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
